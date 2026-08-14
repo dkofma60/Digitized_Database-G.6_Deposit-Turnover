@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from SQL_database.OCR_to_SQL_loaders.load_g6_raw import (
+from OCR_to_SQL_loaders.load_g6_raw import (
     LoaderError,
     Record,
     exact_decimal,

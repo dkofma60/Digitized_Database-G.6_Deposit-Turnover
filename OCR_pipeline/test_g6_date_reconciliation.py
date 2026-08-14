@@ -2,7 +2,7 @@ import os
 import unittest
 from datetime import date
 
-import SQL_database.OCR_pipeline.g6_spatial_extraction_pipeline as pipeline
+import OCR_pipeline.g6_spatial_extraction_pipeline as pipeline
 
 
 def sequence(months, anchors=None):
