@@ -123,18 +123,3 @@ to final staging; the remaining staging and raw foreign keys lead back to the
 source document, page, physical cell, and competing OCR candidates.
 
 Paths retained as provenance are relative to this `SQL_database/` directory.
-
-## Publish or restore the completed snapshot
-
-Export the completed database as a compressed PostgreSQL custom-format `.dump`
-and attach it to a GitHub release rather than committing it to the repository.
-Restore the downloaded release asset into an empty database with PostgreSQL 18
-or later:
-
-```bash
-pg_restore --exit-on-error --no-owner \
-  --dbname "$PGDATABASE" /path/to/g6_turnover_full_database.dump
-```
-
-The release asset is a convenience snapshot; the numbered SQL, loaders, and
-retained OCR artifacts remain the reproducible build path.
