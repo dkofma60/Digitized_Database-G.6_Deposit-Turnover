@@ -1,4 +1,4 @@
-# Federal Reserve G.6 deposit-turnover database
+# Federal Reserve G.6 deposit-turnover digitized database
 
 This PostgreSQL database digitizes the Federal Reserve's historical G.6 Debits and Deposit Turnover at Commercial Banks releases for 1977-1996 into a fully auditable research dataset. Prior to July 1977, only demand deposit data was collected. The release was retired in October 1996.
 
